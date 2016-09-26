@@ -1,0 +1,21 @@
+Esta es la descripción de las interfaces de los sistemas externos.
+Las mismas *ya se encuentran en los archivos .jar*, por lo que no es necesario implementarlas ni copiar este código de ejemplo.
+
+Sender O'Matic:
+interface SenderOMatic {
+
+    static SenderOMatic senderInterface = // El framework dejará una instancia aquí
+
+    String logIn(String username, String password);
+    void sendSaleData(String sessionToken, Date datePerformed, float saleTotal);
+
+}
+
+Enviador Info:
+public interface EnviadorInfo {
+    
+    static EnviadorInfo enviador = // El framework dejará una instancia aquí
+    
+    void registrarVenta(String idEmpresa, String contraseña, String fechaVenta, int cantidadArticulos, int pesosGastados);
+
+}
